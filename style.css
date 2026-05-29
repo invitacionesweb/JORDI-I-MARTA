@@ -43,7 +43,7 @@ body {
 }
 .boton:hover {
     color: var(--color-1);
-    background-color: transparent;
+    background-color: var(--color-0);
     border: 1px solid var(--color-1);
     padding: 10px 30PX;
     text-align: center;
@@ -63,7 +63,7 @@ body {
 }
 .boton2:hover {
     color: var(--color-0);
-    background-color: transparent;
+    background-color: var(--color-1);
     border: 1px solid var(--color-0);
     padding: 10px 30PX;
     text-align: center;
@@ -230,7 +230,7 @@ nav {
 
 .bloque {
     text-align: center;
-    margin: 0 10px; /* Añadido espacio entre bloques para mejorar la apariencia */
+    margin: 0 10px; /* AÃ±adido espacio entre bloques para mejorar la apariencia */
     }
 
 .numero {
@@ -245,7 +245,7 @@ nav {
     }
 
 
-    /*DATOS UBICACIÓN*/
+    /*DATOS UBICACIÃ“N*/
 
     .datos-ubicacion {
        
@@ -259,19 +259,8 @@ nav {
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        gap: 30px;
     }
 
-    .datos h3 {
-    color: var(--color-3);
-    font-family: var(--font-principal);
-    letter-spacing: 0.1rem;
-    font-size: 2.6em;
-    font-weight: lighter;
-    line-height: 1; /* espacio normal */
-    text-align: center;
-    margin: 20px 0 0 0;
-    }
 
     .datos-ubicacion img {
         width: 180px;
@@ -288,16 +277,33 @@ nav {
     .datos p{
         font-size: 2.1rem;
         padding: 0px 0 0 0;
-        margin: 0px 0px 30px 0;
         max-width: 320px;
     }
 
-
+/*FOTOS*/
+.novios {
+    width: 100%;
+    height: 90VH;
+    background-image: url(./img-editable/textura1.png);
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    padding: auto;
+    display: flex;
+}
+.novios img {
+    width: 340px;
+    height: auto;
+    margin: auto;
+    padding: auto;
+   
+    
+}
 .icono2 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   top: -40px;
   left: -40px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 5px;
 }
 .icono2 img {
@@ -305,10 +311,10 @@ nav {
 }
 
 .icono3 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   bottom: -80px;
   right: 0px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 0px;
 }
 .icono3 img {
@@ -469,7 +475,7 @@ nav {
 }
 
 .accordion-item.active .accordion-content {
-    max-height: 400px;
+    max-height: 200px;
     padding: 15px;
 }
 
@@ -478,10 +484,10 @@ nav {
 }
 
 .icono4 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   top: -40px;
   left: -40px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 5px;
 }
 .icono4 img {
@@ -489,26 +495,25 @@ nav {
 }
 
 .icono5 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   bottom: -80px;
   right: 0px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 0px;
 }
 .icono5 img {
     width: 160px;
 }
 .icono6 {
-  position: absolute; /* Se posiciona respecto al más cercano "relative" */
+  position: absolute; /* Se posiciona respecto al mÃ¡s cercano "relative" */
   bottom: -46px;
   left: 0px;
-  z-index: 10; /* Asegura que esté encima */
+  z-index: 10; /* Asegura que estÃ© encima */
   padding: 0px;
 }
 .icono6 img {
     width: 160px;
 }
-
 
 /*FORMS*/
 .forms {
@@ -547,7 +552,7 @@ nav {
 }
 label .grupo-opciones {
     font-family: var(--font-principal);
-   
+    color: RED;
 }
 .formulario {
     
@@ -590,14 +595,14 @@ label .grupo-opciones {
   display: flex;
   width: 10px;
   align-items: center;
-  font-family: var(--font-principal); /* Cambiá esto por el nombre real de tu fuente secundaria */
+  font-family: var(--font-principal); /* CambiÃ¡ esto por el nombre real de tu fuente secundaria */
   color: var(--color-principal); /* Este es tu color principal, definilo antes o reemplazalo por un valor hex como #A3A87B */
   font-size: 1em;
   gap: 6px;
 }
 
 .radio-option input[type="radio"] {
-  accent-color: var(--color-terciario); /* Cambia el color del círculo si el navegador lo soporta */
+  accent-color: var(--color-terciario); /* Cambia el color del cÃ­rculo si el navegador lo soporta */
 }
 .etiqueta {
    font-family: var(--font-principal);
@@ -623,20 +628,10 @@ label .grupo-opciones {
   margin: auto;
   box-sizing: border-box;
 }
-.formulario input:focus,
-.formulario select:focus,
-.formulario textarea:focus {
-    outline: 2px solid var(--color-1);
-}
 
-.formulario input[type="radio"] {
-    accent-color: var(--color-1);
-}
-
-.formulario input:focus::placeholder,
-.formulario textarea:focus::placeholder {
-    color:#a3a49d;;
-   
+.formulario input::placeholder,
+.formulario textarea::placeholder {
+  color: var(--gris-placeholder);
 }
 
 .formulario textarea {
@@ -659,23 +654,7 @@ label .grupo-opciones {
     padding: 60px 0;
 
 }
-/*FOTOS*/
-.novios {
-    width: 100%;
-    height: 60VH;
-    background-image: url(./img-editable/textura1.png);
-    background-size: cover;
-    background-position: center;
-    position: relative;
-    padding: auto;
-    display: flex;
-}
-.novios img {
-    width: 80%;          /* o el % que quieras */
-    max-width: 500px;    /* tope para pantallas grandes */
-    height: auto;        /* mantiene proporción */
-    margin: auto;
-}
+
 .end img {
     width: 180px;
     margin: auto;
@@ -766,17 +745,17 @@ footer p {
     }
     .logoflor {
         max-width: 100vw; /* Se ajusta al ancho de la pantalla */
-        width: 60px; /* Ajusta el tamaño a algo más pequeño para móviles */
-        left: -65px; /* Ajusta la posición para que no interfiera con la imagen de fondo */
+        width: 60px; /* Ajusta el tamaÃ±o a algo mÃ¡s pequeÃ±o para mÃ³viles */
+        left: -65px; /* Ajusta la posiciÃ³n para que no interfiera con la imagen de fondo */
         top: 750px;
         z-index: 3;
        
     }
     .logoflor2 {
         max-width: 100vw; /* Se ajusta al ancho de la pantalla */
-        width: 100vw; /* Ajusta el tamaño a algo más pequeño para móviles */
+        width: 100vw; /* Ajusta el tamaÃ±o a algo mÃ¡s pequeÃ±o para mÃ³viles */
         top: 1360px;
-        overflow-x: hidden; /* También agregarlo a html */
+        overflow-x: hidden; /* TambiÃ©n agregarlo a html */
         transform: scaleX(-1);
     }
     .logoflor2 img {
@@ -803,7 +782,10 @@ footer p {
         justify-content: center;
         gap:10px;
     }
-    
+    .novios {
+        height: 72vh;
+    }
+
 
     .timeline .iconos {
         flex-direction: column;
@@ -813,9 +795,6 @@ footer p {
     .timeline p {
         font-size: 1.3rem;
 
-    }
-.novios {
-        height: 50%;
     }
 
 }
